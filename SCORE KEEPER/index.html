@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPong</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<style>
+    .winner {
+        color: green;
+    }
+
+    .loser {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is- 2by1">
+                            <img src="https://media.istockphoto.com/photos/soccer-ball-flew-into-the-goal-soccer-ball-bends-the-net-against-the-picture-id1197582798?k=20&m=1197582798&s=612x612&w=0&h=wnbdKgg3oHpOR7feTYdwk_HPGIorN7qXDtb_9m93FpU="
+                                alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="title is-large card-header-title ">
+                            Soccer score keeper
+                        </p>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </header>
+                    <div class="card-content">
+                        <div class="title is-1">
+                            <h1><span id="player1display">0 </span> to <span id="player2display"> 0</span></h1>
+                        </div>
+                        <p>Use the buttons below to keep goals</p>
+                        <label for="players" id="label is-large is-inline"><b>Set Target goals </b></label>
+                        <div class="select select is-rounded">
+                            <select name="" id="players">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1button" class="button is-large is-primary card-footer-item">+1 Player ONE</button>
+                        <button id="p2button" class="button is-large is-info card-footer-item">+1 Player TWO</button>
+                        <button id="reset" class="button is-large is-danger card-footer-item">Reset Scores</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <select name="" id="players">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+    </select> -->
+    <!-- <button id="p1button">+1 Player 1</button>
+    <button id="p2button">+1 Palyer 2</button>
+    <button id="reset">Reset</button> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
